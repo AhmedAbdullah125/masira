@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import Marq from './marq';
 import img1 from '/public/kae.jpeg'
 import Link from 'next/link';
 
