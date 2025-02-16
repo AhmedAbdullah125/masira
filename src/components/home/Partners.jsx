@@ -1,6 +1,6 @@
 'use client'
 import React , { useEffect, useState } from 'react';
-import Marq from './marq';
+import Marq from '@components/home/marq';
 import img1 from '/public/Partners/1.png'
 import img2 from '/public/Partners/2.png'
 import img3 from '/public/Partners/3.png'
