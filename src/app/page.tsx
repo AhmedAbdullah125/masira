@@ -6,29 +6,25 @@ import Partners from '@/components/home/Partners';
 import Touch from '@/components/home/Touch';
 import Solutions from '@/components/home/Solutions';
 import Blogs from '@/components/home/Blogs';
+import NotFound from './not-found';
 export default function Home() {
   const [lang, setLang] = useState('en');
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      if (localStorage.getItem('lang')==='ar') {
+      if (localStorage.getItem('lang') === 'ar') {
         setLang('ar');
       }
-      else if (localStorage.getItem('lang')==='en') {
+      else if (localStorage.getItem('lang') === 'en') {
         setLang('en');
       }
-      else{
+      else {
         localStorage.setItem('lang', 'en');
       }
     }
   }, []);
   return (
     <main>
-     <Hero />
-     <Solutions />
-     <Who />
-     <Partners />
-     <Touch />
-     <Blogs />
+      <NotFound />
     </main>
   );
 }
